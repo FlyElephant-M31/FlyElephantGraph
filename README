@@ -1,0 +1,42 @@
+
+USAGE:
+
+1) gus_hipr is a sequential version of gusfield algorithm based on the HIPR maximum flow code.
+2) gusp is a parallel version base on the HIPR code and using OpenMP
+
+The make command will produce both gus_hipr and gusp.
+
+Run gus_hipr as in:
+$ gus_hipr graph.dimacs
+
+and gusp as in:
+$ gusp 10 graph.dimacs
+
+where 10 is the number of parallel threads.
+
+----
+
+This software is derived from HIPR owned by IG Systems, Inc.
+Commercial use requires a license.
+
+If results are reported, references should include:
+
+J. Cohen, L. A. Rodrigues, F. Silva, R. Carmo, A. Guedes, E. P. Duarte Jr., 
+"Parallel Implementations of Gusfield's Cut Tree Algorithm," 
+11th International Conference Algorithms and Architectures for Parallel Processing (ICA3PP), 
+pp. 258-269, Lecture Notes in Computer Science (LNCS) 7016, ISSN 0302-9743, Melbourne,
+Australia, 2011.  
+
+And these for HIPR maximum flow implementation: 
+  Goldberg and Tarjan, "A New Approach to the Maximum Flow Problem,"
+  J. ACM Vol. 35, 921--940, 1988
+and 
+  Cherkassky and Goldberg, "On Implementing Push-Relabel Method for the
+  Maximum Flow Problem," Proc. IPCO-4, 157--171, 1995.
+
+---
+This software comes with NO WARRANTY, expressed or implied. By way 
+of example, but not limitation, we make no representations of warranties
+of merchantability or fitness for any particular purpose or that the use
+of the software components or documentation will not infringe any patents,
+copyrights, trademarks, or other rights.
